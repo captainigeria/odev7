@@ -15,3 +15,12 @@ SELECT country_id,city_id,city FROM city
 GROUP BY country_id,city_id,city
 ORDER BY country_id DESC 
 LIMIT 1 ;
+
+
+VEYA
+
+SELECT country_id,city_id,city FROM city
+GROUP BY country_id,city_id,city
+HAVING MAX(country_id) > 100
+ORDER BY country_id DESC 
+LIMIT 1 ;
